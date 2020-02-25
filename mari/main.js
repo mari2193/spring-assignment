@@ -1,10 +1,26 @@
+//Back to top button
 $(document).ready(function() {
-  $(".my-carousel").slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 2000
+  $("#myBtn").hide(0);
+});
+
+$(window).scroll(function() {
+  let height = $(window).scrollTop();
+  if (height > 150) {
+    $("#myBtn").fadeIn();
+  } else {
+    $("#myBtn").fadeOut();
+  }
+});
+
+$(document).ready(function() {
+  $("#myBtn").click(function(event) {
+    event.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: 0
+      },
+      "fast"
+    );
+    return false;
   });
 });
