@@ -5,26 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio page</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="main.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://use.fontawesome.com/777cc9238d.js"></script>
 
  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.0/css/all.css">
-
- 
- 
-  </head>
+ </head>
 
   <body>
-  
-  
 
-
-<div>
+ <div>
+   <!--Navigation bar with logo on left and drop-down menu on right-->
   <div class="navbar">
     <div class="logo">
   <h2><a href="index.html"> My portfolio</a></h2></div>
@@ -42,40 +38,62 @@
   </div>
 </div>
 
-
+<!--Hero banner section-->
     <div class="hero-image">
       <a name="home"></a>
       <div class="hero-text">
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, officiis!</p>
+      <h1 style="font-size: 3rem">Hi there! My name is Mari.</h1>
+      <p style="font-size: 1.2rem;">I am a first year Full Stack Web Developer - student.</p>
       <br>
-      <button id="info">Read more</button>
+      <button id="info"><a href="#aboutme"> Read more</a></button>
     </div>
   </div>
 </div>
 
+<!--Scroll to top button-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top <i class="fa fa-caret-up"></i> 
 </button>
 
+
+<!--Work experience, education, photo of me-->
 <section>
     <div class="about-me" id="container-2">
       <a name="aboutme"></a>
-        <img class="container-2-image" src="https://source.unsplash.com/DUmFLtMeAbQ">
-   <div class="text-content">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ad reiciendis rem quae eius amet velit officia maiores molestias libero.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit animi commodi explicabo autem nam obcaecati perferendis ratione, accusamus fuga sed!</p>
+        <img class="container-2-image" src="Mari.jpg" alt="photo-of me"/>
+   <div class="text-content-1">
+                <h3 style="font-size: 1.5rem">From a licenced drug dealer to a coder?</h3>
+                <p>- Currently, I'm studying in a Full Stack Web Developer - program in Helsinki Business College.</p>
+                <p>- Before this, my educational background consists of pharmacy studies in the University of Eastern Finland and high school degree from Kuopio Lyseum High School.</p>
                 <ul>
-                    <li>list item 1</li>
-                    <li>list item 2</li>
-                    <li>list item 3</li>
+                    <li> 1/2020 - Present:
+                      Full Stack Web Developer program, Helsinki Business College, Helsinki, Finland
+                    </li>
+                    <li> 09/2012 - 06/2016: B.Sc in Pharmacy, University of Eastern Finland, Kuopio, Finland </li>
+                    <li> 08/2009 - 05/2012: High School Graduate, Kuopio Lyceum High School, Kuopio, Finland</li>
                 </ul>
             </div>
+            <div class="text-content-2">
+              <h3 style="font-size: 1.5rem">My work experience, so far</h3>
+              <p>- For the past almost 4 years I've been working as a community pharmacist in several different pharmacies across the country. (And also on the other side of the world, in Sydney, Australia!)</p>
+              <p>- Before my pharmacy career I've been doing many different kind of summer jobs, mainly sales and customer service related ones.</p>
+              <ul>
+                  <li> 01/2017 - Present: Pharmacist, Farenta Oy, Capital Region, Finland</li>
+                  <li> 08/2016 - 12/2016: Pharmacist, Lapuan I Lakeus Apteekki, Lapua, Finland</li>
+                  <li> 02/2016 - 05/2016: Pharmacy Trainee, The Union Pharmacy, Sydney, Australia</li>
+              </ul> <br>
+              <p>For additional information, please download my CV in <i class="fas fa-file-pdf" style="color:red;"></i>:</p><br>
+              <a href="CV 2020.pdf" download="CV Mari Tenhunen.pdf"><button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                <span>Download</span>
+              </button></a>
+              
+          </div>
 </div>
  </div>
     </div>
 </section>
 
+<!--My skills as a web developer-->
 <section>
     <div class="myskills" id="container-3">
       <a name="my-skills"></a>
@@ -83,21 +101,23 @@
         <h3>My skills</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem, ex similique mollitia, praesentium fuga consequatur, iure in ipsam reiciendis saepe veniam dolorum libero corporis accusamus quis et! Quos repudiandae eligendi, dolor dolorem quae eos ut nobis voluptate atque, quo voluptatum ea corrupti? Eius voluptates laudantium sapiente tempora optio, quisquam delectus animi beatae doloribus! Ipsum, repellat esse. Repellat libero iste odio tenetur natus dolore consequuntur delectus error soluta officia voluptate accusamus at neque ea nemo id explicabo possimus a excepturi molestias, quia, nostrum ab ipsum? Dignissimos vitae praesentium eligendi exercitationem aliquid quisquam tempore similique omnis neque. Expedita excepturi totam quas dolore nihil commodi, nulla ex quo impedit? Libero, quis! Ut ipsam perferendis nulla magni alias recusandae sequi accusantium molestiae voluptatem?</p>
     </div>
+
+    <!--Contact information section-->
 <div class="skill-card-container">
     <div class="card" id="skill-card-1">
       <i class="fab fa-html5 fa-2x"></i>
       <h4>HTML</h4>
-      <progress id="bar-1" max="100" value="50"></progress>
+      <progress id="bar-1" max="100" value="30"></progress>
        </div>
     <div class="card" id="skill-card-2">
       <i class="fab fa-css3-alt fa-2x"></i>
       <h4>CSS</h4>
-      <progress id="bar-2" max="100" value="40"></progress>
+      <progress id="bar-2" max="100" value="20"></progress>
     </div>
     <div class="card" id="skill-card-3">
       <i class="fab fa-js-square fa-2x" style="background-color:skyblue; color:white;"></i>
       <h4>JS</h4>
-      <progress id="bar-3" max="100" value="10"></progress>
+      <progress id="bar-3" max="100" value="5"></progress>
     </div>
     <div class="card" id="skill-card-4">
       <i class="fab fa-figma fa-2x"></i>
