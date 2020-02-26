@@ -31,15 +31,15 @@ body {
 
 .navbar {
   background-color: #333;
-  height: 70px;
+  overflow: hidden;
 }
 
 .logo h2 a {
   float: left;
   color: white;
   text-decoration: none;
-  padding-top: 15px;
-  padding-left: 20px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .dropdown {
@@ -47,8 +47,7 @@ body {
   font-size: 16px;
   color: white;
   text-decoration: none;
-  padding-top: 5px;
-  padding-right: 20px;
+  padding: 30px;
 }
 
 .dropdown .dropbtn {
@@ -95,8 +94,8 @@ body {
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://source.unsplash.com/ylveRpZ8L1s);
-  height: 350px;
-  width: 1265px;
+  height: 300px;
+  background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   background-position: center;
@@ -125,12 +124,13 @@ body {
   cursor: pointer;
 }
 
-#info a {
-  text-decoration: none;
-}
-
 #info:hover {
   background-color: rgb(192, 219, 229);
+}
+
+#info a {
+  text-decoration: none;
+  color: black;
 }
 
 /*About me section*/
@@ -141,24 +141,37 @@ body {
 
 .container-2-image {
   flex: 1;
-  width: 12em;
-  height: auto;
-  padding: 20px;
-  padding-left: 30px;
   align-self: flex-start;
+  margin-top: 35px;
+  object-fit: contain;
+  align-self: flex-start;
+  padding: 5px;
 }
 
 .text-content-1 {
-  flex: 2;
-  border-right: 1px solid black;
-  padding: 15px;
-  margin: 5px;
+  flex: 1;
+  padding: 10px;
 }
 
 .text-content-2 {
-  flex: 2;
-  padding: 15px;
+  flex: 1;
+  padding: 5px;
   margin: 5px;
+}
+
+#CV-btn {
+  background-color: skyblue;
+  border: none;
+  color: black;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/* Darker background on mouse-over */
+#CV-btn:hover {
+  background-color: rgb(192, 219, 229);
 }
 
 /*My skills section*/
@@ -167,9 +180,9 @@ body {
 }
 
 .skill-card-container {
-  height: 200px;
   display: flex;
   justify-content: space-around;
+  height: 200px;
 }
 
 .card {
@@ -200,6 +213,7 @@ progress {
   -webkit-appearance: none;
   width: 100px;
   height: 15px;
+  padding-bottom: 5px;
 }
 
 /*Footer section*/
@@ -211,22 +225,40 @@ footer {
   justify-content: flex-start;
 }
 
+#email,
+#linkedin,
+#facebook,
+#instagram {
+  padding-left: 200px;
+}
+
+.mail-link {
+  color: white;
+  text-decoration: none;
+  padding-left: 165px;
+}
+
+.linkedin-link {
+  padding-left: 100px;
+}
+
+.fb-link {
+  padding-left: 100px;
+}
+
+.ig-link {
+  padding-left: 80px;
+}
+
 input {
-  width: 80%;
+  width: 70%;
   padding: 5px;
   border-radius: 5px;
 }
 
 .text-part-1 {
   flex: 1;
-  margin: 5px;
-  padding: 10px;
-}
-
-.text-part-2 {
-  flex: 1;
-  margin: 5px;
-  padding: 10px;
+  margin-left: 30px;
 }
 
 .contact-form {
@@ -234,21 +266,23 @@ input {
 }
 
 textarea {
+  width: 71%;
   border-radius: 5px;
 }
 
 button {
   background-color: lightskyblue;
   border: none;
-  margin-bottom: 7px;
-  padding: 7px 15px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
   border-radius: 1px;
 }
 
 @media screen and (max-width: 620px) {
   .about-me,
-  .text-content,
-  .skill-card-container,
+  .text-content-1,
+  .text-content-2,
+  .card,
   footer {
     display: flex;
     flex-direction: column;
