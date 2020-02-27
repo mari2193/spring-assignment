@@ -13,45 +13,51 @@ body {
   display: block;
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
-  border: 1px solid rgb(206, 206, 206);
   font-size: 10px;
   right: 30px; /* Place the button 30px from the right */
   z-index: 99;
-  background-color: white;
+  background-color: skyblue;
   color: black;
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 7px 5px;
+  padding: 10px 7px;
+  border-radius: 5px;
 }
 
 #myBtn:hover {
-  background-color: rgb(190, 189, 189);
+  background-color: rgb(192, 219, 229);
 }
 
 /*Header section*/
 
-.navbar {
+#navbar {
   background-color: #333;
   overflow: hidden;
+  z-index: 9999;
 }
 
 .logo h2 a {
   float: left;
   color: white;
+  font-size: 35px;
   text-decoration: none;
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
+}
+
+.logo h2 a:hover {
+  background-color: grey;
 }
 
 .dropdown {
   float: right;
-  font-size: 16px;
   color: white;
   text-decoration: none;
   padding: 30px;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 20px;
+  padding: 5px;
   border: none;
   color: white;
   background-color: inherit;
@@ -95,6 +101,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://source.unsplash.com/ylveRpZ8L1s);
   height: 300px;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -102,7 +109,7 @@ body {
   position: relative;
 }
 
-/* Place text in the middle of the image */
+/* Place text in the middle of the background-image */
 .hero-text {
   text-align: left;
   position: absolute;
@@ -117,7 +124,7 @@ body {
   background-color: skyblue;
   overflow: hidden;
   font-family: inherit;
-  border: none;
+  font-size: 15px;
   padding: 10px 20px;
   margin: 5px 10px;
   border-radius: 5px;
@@ -136,11 +143,14 @@ body {
 /*About me section*/
 .about-me {
   display: flex;
+  align-content: space-between;
   height: 100%;
 }
 
+/*The photo*/
 .container-2-image {
   flex: 1;
+  max-width: 100%;
   align-self: flex-start;
   margin-top: 35px;
   object-fit: contain;
@@ -148,24 +158,26 @@ body {
   padding: 5px;
 }
 
+/*Education*/
 .text-content-1 {
   flex: 1;
   padding: 10px;
 }
 
+/*Work experience*/
 .text-content-2 {
   flex: 1;
   padding: 5px;
   margin: 5px;
 }
 
+/*Download CV in PDF-form - button*/
 #CV-btn {
   background-color: skyblue;
-  border: none;
   color: black;
-  padding: 12px 30px;
+  padding: 10px 20px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 5px;
 }
 
@@ -227,7 +239,7 @@ footer {
 
 #email,
 #linkedin,
-#facebook,
+#github,
 #instagram {
   padding-left: 200px;
 }
@@ -240,14 +252,17 @@ footer {
 
 .linkedin-link {
   padding-left: 100px;
+  color: white;
 }
 
-.fb-link {
-  padding-left: 100px;
+.gh-link {
+  padding-left: 120px;
+  color: white;
 }
 
 .ig-link {
   padding-left: 80px;
+  color: white;
 }
 
 input {
@@ -270,19 +285,21 @@ textarea {
   border-radius: 5px;
 }
 
-button {
+#submit-btn {
   background-color: lightskyblue;
-  border: none;
   padding: 10px 15px;
   margin-bottom: 10px;
-  border-radius: 1px;
+  border-radius: 5px;
+}
+
+#submit-btn:hover {
+  background-color: rgb(192, 219, 229);
 }
 
 @media screen and (max-width: 620px) {
   .about-me,
   .text-content-1,
   .text-content-2,
-  .card,
   footer {
     display: flex;
     flex-direction: column;
